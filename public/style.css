@@ -705,7 +705,7 @@ html {
   font-family: "revicons";
 }
 
-.an {
+.anim {
   visibility:hidden ;
   animation-name: example;
   animation-duration: 4s;
