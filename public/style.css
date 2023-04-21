@@ -705,16 +705,6 @@ html {
   font-family: "revicons";
 }
 
-.an {
-  visibility:hidden ;
-  animation-name: example;
-  animation-duration: 4s;
-  animation-fill-mode: both;
-  animation-delay: 2s;
-  position: relative;
-  right: 0;
-}
-
 @keyframes example {
   2%{
     visibility: visible;
