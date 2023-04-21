@@ -1,0 +1,40 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+  .rtl {
+    direction: rtl;
+  }
+
+  .revicons {
+    font-family: "revicons";
+  }
+
+  .an {
+    visibility:hidden ;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-fill-mode: both;
+    animation-delay: 2s;
+    position: relative;
+    right: 0;
+  }
+  @keyframes example {
+   
+    2%{
+      visibility: visible;
+      background-color:red; right: 0;
+    }
+    100%{
+      visibility: visible;
+      background-color:blue; right: 2rem;
+    }
+  }
+}
+
+@layer base {
+  html {
+    font-family: "IRANYekan";
+  }
+}
