@@ -536,6 +536,18 @@ html {
   margin-top: 2.5rem;
 }
 
+.block {
+  display: block;
+}
+
+.inline-block {
+  display: inline-block;
+}
+
+.inline {
+  display: inline;
+}
+
 .flex {
   display: flex;
 }
@@ -570,6 +582,10 @@ html {
 
 .h-auto {
   height: auto;
+}
+
+.h-full {
+  height: 100%;
 }
 
 .w-10 {
@@ -618,6 +634,10 @@ html {
 
 .justify-around {
   justify-content: space-around;
+}
+
+.overflow-hidden {
+  overflow: hidden;
 }
 
 .rounded-full {
@@ -680,8 +700,16 @@ html {
   font-size: 10px;
 }
 
+.text-\[1rem\] {
+  font-size: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .not-italic {
@@ -705,27 +733,72 @@ html {
   font-family: "revicons";
 }
 
-.anim {
-  visibility:hidden ;
-  animation-name: example;
-  animation-duration: 4s;
+.animP {
+  visibility: hidden;
+  animation-name: animP;
+  animation-duration: 1s;
   animation-fill-mode: both;
-  animation-delay: 2s;
+  animation-delay: 1.5s;
   position: relative;
-  right: 0;
 }
 
-@keyframes example {
-  2%{
+@keyframes animP {
+  3% {
     visibility: visible;
-    background-color:red;
     right: 0;
   }
 
-  100%{
+  100% {
     visibility: visible;
-    background-color:blue;
-    right: 2rem;
+    right: 25%;
+  }
+}
+
+.animButton {
+  visibility: hidden;
+  animation-name: animButton;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 3.5s;
+  width: 0px;
+  height: 50px;
+}
+
+@keyframes animButton {
+  0% {
+    background-color: white;
+    border-radius: 0;
+    width: 0;
+  }
+
+  90% {
+    background-color: white;
+    border-radius: 0;
+    width: 100%;
+  }
+
+  100% {
+    visibility: visible;
+    width: 100%;
+  }
+}
+
+.animText {
+  visibility: hidden;
+  animation-name: animText;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+  animation-delay: 2.5s;
+}
+
+@keyframes animText {
+  from {
+    transform: scale(1.5, 1.5);
+  }
+
+  to {
+    transform: scale(1.1, 1.1);
+    visibility: visible;
   }
 }
 
