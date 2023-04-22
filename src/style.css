@@ -11,6 +11,10 @@
     font-family: "revicons";
   }
 
+  .Shabnam{
+    font-family: "Shabnam";
+  }
+
   .animP {
     visibility: hidden;
     animation-name: animP;

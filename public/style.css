@@ -528,12 +528,44 @@ html {
   margin-left: 0.375rem;
 }
 
+.ml-3 {
+  margin-left: 0.75rem;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
+.mr-3 {
+  margin-right: 0.75rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
+}
+
+.mt-12 {
+  margin-top: 3rem;
+}
+
+.mt-20 {
+  margin-top: 5rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
+.mt-5 {
+  margin-top: 1.25rem;
+}
+
+.mb-5 {
+  margin-bottom: 1.25rem;
 }
 
 .block {
@@ -568,6 +600,10 @@ html {
   height: 1.5rem;
 }
 
+.h-7 {
+  height: 1.75rem;
+}
+
 .h-\[16\.62rem\] {
   height: 16.62rem;
 }
@@ -596,6 +632,10 @@ html {
   width: 1.5rem;
 }
 
+.w-7 {
+  width: 1.75rem;
+}
+
 .w-\[14\.68rem\] {
   width: 14.68rem;
 }
@@ -610,6 +650,11 @@ html {
 
 .w-full {
   width: 100%;
+}
+
+.rotate-180 {
+  --tw-rotate: 180deg;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .flex-row {
@@ -688,6 +733,15 @@ html {
   text-align: center;
 }
 
+.font-\[\] {
+  font-family: ;
+}
+
+.text-3xl {
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+}
+
 .text-\[0\.9rem\] {
   font-size: 0.9rem;
 }
@@ -704,12 +758,33 @@ html {
   font-size: 1rem;
 }
 
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
 
+.font-medium {
+  font-weight: 500;
+}
+
 .font-normal {
   font-weight: 400;
+}
+
+.font-semibold {
+  font-weight: 600;
+}
+
+.font-\[1re\] {
+  font-weight: 1re;
+}
+
+.font-\[1rem\] {
+  font-weight: 1rem;
 }
 
 .not-italic {
@@ -718,6 +793,11 @@ html {
 
 .leading-\[26px\] {
   line-height: 26px;
+}
+
+.text-\[\#223a66\] {
+  --tw-text-opacity: 1;
+  color: rgb(34 58 102 / var(--tw-text-opacity));
 }
 
 .text-white {
@@ -731,6 +811,10 @@ html {
 
 .revicons {
   font-family: "revicons";
+}
+
+.Shabnam{
+  font-family: "Shabnam";
 }
 
 .animP {
@@ -815,7 +899,17 @@ html {
   background-color: transparent;
 }
 
+.hover\:bg-\[\#223a66\]:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(34 58 102 / var(--tw-bg-opacity));
+}
+
 .hover\:text-\[\#223a66\]:hover {
   --tw-text-opacity: 1;
   color: rgb(34 58 102 / var(--tw-text-opacity));
+}
+
+.hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
 }
