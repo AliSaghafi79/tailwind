@@ -11,7 +11,7 @@
     font-family: "revicons";
   }
 
-  .Shabnam{
+  .Shabnam {
     font-family: "Shabnam";
   }
 
@@ -75,6 +75,46 @@
     to {
       transform: scale(1.1, 1.1);
       visibility: visible;
+    }
+  }
+
+  .hoverBox:hover {
+    animation: hoverBox 0.7s;
+    animation-fill-mode: both;
+  }
+
+  .hoverBox:hover span p {
+    color: white;
+  }
+
+  .hoverBox:hover div svg {
+    fill: white;
+  }
+
+  .hoverBox:not(:hover) {
+    animation: notHoverBox 0.7s;
+    animation-fill-mode: both;
+  }
+
+  @keyframes hoverBox {
+    from {
+      height: 0;
+      background-color: #223a66;
+    }
+    to {
+      height: 22rem;
+      background-color: #223a66;
+    }
+  }
+
+  @keyframes notHoverBox {
+    from {
+      height: 22rem;
+      background-color: #223a66;
+    }
+    to {
+      height: 0;
+      background-color: #223a66;
     }
   }
 }
