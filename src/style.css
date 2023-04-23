@@ -93,7 +93,6 @@
 
   .hoverBox:not(:hover) {
     animation: notHoverBox 0.7s;
-    animation-fill-mode: both;
   }
 
   @keyframes hoverBox {
@@ -102,14 +101,14 @@
       background-color: #223a66;
     }
     to {
-      height: 22rem;
+      height: 27rem;
       background-color: #223a66;
     }
   }
 
   @keyframes notHoverBox {
     from {
-      height: 22rem;
+      height: 27rem;
       background-color: #223a66;
     }
     to {

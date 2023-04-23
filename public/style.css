@@ -604,6 +604,10 @@ html {
   height: 3.125rem;
 }
 
+.h-\[35rem\] {
+  height: 35rem;
+}
+
 .h-\[4\.38rem\] {
   height: 4.38rem;
 }
@@ -876,7 +880,6 @@ html {
 
 .hoverBox:not(:hover) {
   animation: notHoverBox 0.7s;
-  animation-fill-mode: both;
 }
 
 @keyframes hoverBox {
@@ -886,14 +889,14 @@ html {
   }
 
   to {
-    height: 22rem;
+    height: 27rem;
     background-color: #223a66;
   }
 }
 
 @keyframes notHoverBox {
   from {
-    height: 22rem;
+    height: 27rem;
     background-color: #223a66;
   }
 
