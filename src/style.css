@@ -15,6 +15,10 @@
     font-family: "Shabnam";
   }
 
+  .Vazir {
+    font-family: "vazir";
+  }
+
   .animP {
     visibility: hidden;
     animation-name: animP;
@@ -115,6 +119,21 @@
       height: 0;
       background-color: #223a66;
     }
+  }
+
+  .tr div {
+    transition: width .4s ease;
+  }
+  .tr div svg{
+    display: none;
+  }
+
+  .tr:hover svg{
+    display: block;
+  }
+
+  .tr:hover div {
+    width: 100%;
   }
 }
 

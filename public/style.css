@@ -520,6 +520,43 @@ html {
   --tw-backdrop-sepia:  ;
 }
 
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-\[5rem\] {
+  bottom: 5rem;
+}
+
+.left-0 {
+  left: 0px;
+}
+
+.left-16 {
+  left: 4rem;
+}
+
+.right-\[2rem\] {
+  right: 2rem;
+}
+
+.top-12 {
+  top: 3rem;
+}
+
+.mx-\[10px\] {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.mb-4 {
+  margin-bottom: 1rem;
+}
+
 .mb-5 {
   margin-bottom: 1.25rem;
 }
@@ -536,12 +573,20 @@ html {
   margin-left: 0.75rem;
 }
 
+.ml-\[10px\] {
+  margin-left: 10px;
+}
+
 .mr-2 {
   margin-right: 0.5rem;
 }
 
 .mr-3 {
   margin-right: 0.75rem;
+}
+
+.mr-\[10px\] {
+  margin-right: 10px;
 }
 
 .mt-10 {
@@ -552,12 +597,24 @@ html {
   margin-top: 3rem;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
 
+.mt-24 {
+  margin-top: 6rem;
+}
+
 .mt-5 {
   margin-top: 1.25rem;
+}
+
+.mt-\[5\.625rem\] {
+  margin-top: 5.625rem;
 }
 
 .block {
@@ -588,6 +645,10 @@ html {
   height: 8rem;
 }
 
+.h-40 {
+  height: 10rem;
+}
+
 .h-6 {
   height: 1.5rem;
 }
@@ -598,6 +659,10 @@ html {
 
 .h-\[16\.62rem\] {
   height: 16.62rem;
+}
+
+.h-\[18\.675rem\] {
+  height: 18.675rem;
 }
 
 .h-\[3\.125rem\] {
@@ -618,6 +683,10 @@ html {
 
 .h-full {
   height: 100%;
+}
+
+.w-0 {
+  width: 0px;
 }
 
 .w-10 {
@@ -685,6 +754,10 @@ html {
   overflow: hidden;
 }
 
+.rounded-3xl {
+  border-radius: 1.5rem;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -703,17 +776,70 @@ html {
   background-color: rgb(34 58 102 / var(--tw-bg-opacity));
 }
 
+.bg-\[rgba\(241\2c 58\2c 102\2c 0\.8\)\] {
+  background-color: rgba(241,58,102,0.8);
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-\[url\(\'\.\/images\/10-min\.jpg\'\)\] {
+  background-image: url('./images/10-min.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/11-1-min\.jpg\'\)\] {
+  background-image: url('./images/11-1-min.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/4-1-min\.jpg\'\)\] {
+  background-image: url('./images/4-1-min.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/5-min-1\.jpg\'\)\] {
+  background-image: url('./images/5-min-1.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/6-min-1\.jpg\'\)\] {
+  background-image: url('./images/6-min-1.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/7-min-1\.jpg\'\)\] {
+  background-image: url('./images/7-min-1.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/8-min\.jpg\'\)\] {
+  background-image: url('./images/8-min.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/9-min\.jpg\'\)\] {
+  background-image: url('./images/9-min.jpg');
 }
 
 .bg-\[url\(\'\.\/images\/dr\.jpg\'\)\] {
   background-image: url('./images/dr.jpg');
 }
 
+.bg-\[url\(\'\.\/images\/home-3-video-bg-2-1-min\.jpg\'\)\] {
+  background-image: url('./images/home-3-video-bg-2-1-min.jpg');
+}
+
+.bg-\[url\(\'\.\/images\/\635\62B\635\62B-min\.jpg\'\)\] {
+  background-image: url('./images/صثصث-min.jpg');
+}
+
 .bg-cover {
   background-size: cover;
+}
+
+.bg-\[center_center\] {
+  background-position: center center;
 }
 
 .bg-top {
@@ -746,6 +872,10 @@ html {
   font-size: 1.2rem;
 }
 
+.text-\[1\.6rem\] {
+  font-size: 1.6rem;
+}
+
 .text-\[10px\] {
   font-size: 10px;
 }
@@ -754,8 +884,25 @@ html {
   font-size: 1rem;
 }
 
+.text-\[2\.2rem\] {
+  font-size: 2.2rem;
+}
+
+.text-\[26px\] {
+  font-size: 26px;
+}
+
+.text-xl {
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-normal {
@@ -770,6 +917,10 @@ html {
   font-style: normal;
 }
 
+.leading-\[1\.8em\] {
+  line-height: 1.8em;
+}
+
 .leading-\[26px\] {
   line-height: 26px;
 }
@@ -779,9 +930,17 @@ html {
   color: rgb(34 58 102 / var(--tw-text-opacity));
 }
 
+.text-\[rgba\(0\2c 0\2c 0\2c \.5\)\] {
+  color: rgba(0,0,0,.5);
+}
+
 .text-white {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.opacity-90 {
+  opacity: 0.9;
 }
 
 .rtl {
@@ -794,6 +953,10 @@ html {
 
 .Shabnam {
   font-family: "Shabnam";
+}
+
+.Vazir {
+  font-family: "vazir";
 }
 
 .animP {
@@ -904,6 +1067,22 @@ html {
     height: 0;
     background-color: #223a66;
   }
+}
+
+.tr div {
+  transition: width .4s ease;
+}
+
+.tr div svg{
+  display: none;
+}
+
+.tr:hover svg{
+  display: block;
+}
+
+.tr:hover div {
+  width: 100%;
 }
 
 .hover\:border-2:hover {
