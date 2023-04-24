@@ -124,11 +124,11 @@
   .tr div {
     transition: width .4s ease;
   }
-  .tr div svg{
+  .tr div svg , .tr div p{
     display: none;
   }
 
-  .tr:hover svg{
+  .tr:hover svg , .tr:hover p{
     display: block;
   }
 
