@@ -138,6 +138,13 @@
 }
 
 @layer base {
+@font-face {
+ 
+    font-family: IRANYekan;
+ 
+    src: url(Qs_Iranyekan.ttf)format(ttf);
+ 
+}
   html {
     font-family: "IRANYekan";
   }
