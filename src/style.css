@@ -122,29 +122,43 @@
   }
 
   .tr div {
-    transition: width .4s ease;
+    transition: width 0.4s ease;
   }
-  .tr div svg , .tr div p{
+  .tr div svg,
+  .tr div p {
     display: none;
   }
 
-  .tr:hover svg , .tr:hover p{
+  .tr:hover svg,
+  .tr:hover p {
     display: block;
   }
 
   .tr:hover div {
     width: 100%;
   }
+
+  .btn:hover {
+    background-color: transparent;
+    border: 2px solid #f13a66;
+    transition: all 0.2s;
+  }
+
+  .btn:hover svg {
+    fill: #f13a66;
+  }
+
+  .btn:hover p {
+    color: #f13a66;
+  }
 }
 
 @layer base {
-@font-face {
- 
+  @font-face {
     font-family: IRANYekan;
- 
-    src: url(Qs_Iranyekan.ttf)format(ttf);
- 
-}
+
+    src: url(Qs_Iranyekan.ttf) format(ttf);
+  }
   html {
     font-family: "IRANYekan";
   }
