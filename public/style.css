@@ -659,6 +659,10 @@ html {
   display: flex;
 }
 
+.h-0 {
+  height: 0px;
+}
+
 .h-10 {
   height: 2.5rem;
 }
@@ -701,10 +705,6 @@ html {
 
 .h-\[3\.125rem\] {
   height: 3.125rem;
-}
-
-.h-\[35rem\] {
-  height: 35rem;
 }
 
 .h-\[4\.38rem\] {
@@ -848,6 +848,11 @@ html {
   background-color: rgba(241,58,102,0.8);
 }
 
+.bg-blue-950 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(23 37 84 / var(--tw-bg-opacity));
+}
+
 .bg-slate-500 {
   --tw-bg-opacity: 1;
   background-color: rgb(100 116 139 / var(--tw-bg-opacity));
@@ -944,6 +949,10 @@ html {
   padding-bottom: 10px;
 }
 
+.pb-12 {
+  padding-bottom: 3rem;
+}
+
 .pb-\[37px\] {
   padding-bottom: 37px;
 }
@@ -985,10 +994,6 @@ html {
 
 .text-\[0\.9rem\] {
   font-size: 0.9rem;
-}
-
-.text-\[1\.2rem\] {
-  font-size: 1.2rem;
 }
 
 .text-\[1\.6rem\] {
@@ -1172,6 +1177,14 @@ html {
   }
 }
 
+.hoverBox2:hover {
+  transition: height 1s;
+}
+
+.hoverBox2:hover:first-child {
+  height: 100%;
+}
+
 .hoverBox:hover {
   animation: hoverBox 0.7s;
   animation-fill-mode: both;
@@ -1196,14 +1209,14 @@ html {
   }
 
   to {
-    height: 27rem;
+    height: 100px;
     background-color: #223a66;
   }
 }
 
 @keyframes notHoverBox {
   from {
-    height: 27rem;
+    height: 100px;
     background-color: #223a66;
   }
 

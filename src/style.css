@@ -81,6 +81,12 @@
       visibility: visible;
     }
   }
+  .hoverBox2:hover {
+    transition: height 1s;
+  }
+  .hoverBox2:hover:first-child {
+    height: 100%;
+  }
 
   .hoverBox:hover {
     animation: hoverBox 0.7s;
@@ -105,14 +111,14 @@
       background-color: #223a66;
     }
     to {
-      height: 27rem;
+      height: 100px;
       background-color: #223a66;
     }
   }
 
   @keyframes notHoverBox {
     from {
-      height: 27rem;
+      height: 100px;
       background-color: #223a66;
     }
     to {
