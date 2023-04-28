@@ -1,42 +1,161 @@
 <!DOCTYPE html>
-<html lang="en">
+<html dir="rtl" lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="style.css" rel="stylesheet" />
+
+    <!-- Font Vazir -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@200&display=swap"
+      rel="stylesheet"
+    />
     <title>کلینیک دندان پزشکی دکتر ضیائی</title>
+    <!-- CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
+    <!-- Header -->
     <header class="w-full h-auto flex flex-col">
-      <div class="w-full h-32 flex justify-center items-center">
+      <div
+        class="w-full h-32 md:h-40 flex justify-center items-center md:flex-row md:justify-between text-[#223a66] font-semibold lg:justify-around"
+      >
         <img
-          class="w-[14.68rem] h-12"
+          class="w-60 md:w-52 lg:w-80 lg:h-20 h-12"
           src="./images/logo-ziaei3.png"
           alt="logo-ziaei"
         />
+        <div class="hidden md:flex flex-row justify-between w-3/4 lg:w-2/4">
+          <div class="flex flex-row-reverse items-center">
+            <span
+              ><p>شنبه تا پنج‌شنبه (10-8)</p>
+              <p>جمعه (2-10)</p></span
+            >
+            <svg
+              class="w-6 h-6 mx-4 lg:w-7 lg:h-7"
+              fill="#223a66"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="Layer_4"
+              x="0px"
+              y="0px"
+              viewBox="0 0 64.26 64.9"
+              xml:space="preserve"
+            >
+              <g>
+                <g id="access-alarms">
+                  <path
+                    d="M64.26,12.53L49.48,0L45.3,4.82l14.78,12.53L64.26,12.53z M18.96,5.14l-4.18-4.82L0,12.53l4.18,4.82L18.96,5.14z     M33.74,19.92h-4.82V39.2l15.1,9.32l2.57-3.86l-12.85-7.71V19.92z M32.13,7.07c-16.06,0-28.92,12.85-28.92,28.92    S16.06,64.9,32.13,64.9s28.92-12.85,28.92-28.92S48.19,7.07,32.13,7.07z M32.13,58.48c-12.53,0-22.49-9.96-22.49-22.49    c0-12.53,9.96-22.49,22.49-22.49s22.49,9.96,22.49,22.49C54.62,48.52,44.66,58.48,32.13,58.48z"
+                  ></path>
+                </g>
+              </g>
+            </svg>
+          </div>
+
+          <div class="flex flex-row-reverse items-center">
+            <span
+              ><p>اصفهان</p>
+              <p>خیابان شریعتی</p></span
+            >
+            <svg
+              class="w-6 h-6 mx-4 lg:w-7 lg:h-7"
+              fill="#223a66"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="Layer_6"
+              x="0px"
+              y="0px"
+              viewBox="0 0 63.91 63.91"
+              xml:space="preserve"
+            >
+              <polygon
+                fill="none"
+                points="72.9,6.98 72.9,54.98 104.88,54.98 104.88,46.99 136.83,46.99 136.83,6.98 "
+              ></polygon>
+              <g>
+                <path
+                  d="M45.77,40.46c-0.2,0.2-0.4,0.4-0.6,0.59c-1.34,1.33-2.59,2.57-3.6,3.75C52.91,46.13,59,49.63,59,51.62   c0,2.5-9.55,7.37-27.04,7.37S4.92,54.13,4.92,51.62c0-2,6.09-5.49,17.43-6.83c-1.01-1.18-2.26-2.42-3.6-3.75   c-0.2-0.19-0.4-0.39-0.6-0.59C7.93,42.2,0,45.96,0,51.62c0,8.07,16.08,12.29,31.96,12.29s31.96-4.22,31.96-12.29   C63.91,45.96,55.98,42.2,45.77,40.46z"
+                ></path>
+                <path
+                  d="M31.96,0C21.1,0,12.29,8.81,12.29,19.67c0,14.75,17.21,19.67,17.21,29.5c0,1.36,1.1,2.46,2.46,2.46   c1.36,0,2.46-1.1,2.46-2.46c0-9.83,17.21-14.75,17.21-29.5C51.62,8.81,42.82,0,31.96,0z M31.96,24.58c-2.72,0-4.92-2.2-4.92-4.92   s2.2-4.92,4.92-4.92s4.92,2.2,4.92,4.92S34.67,24.58,31.96,24.58z"
+                ></path>
+              </g>
+            </svg>
+          </div>
+
+          <div class="flex flex-row-reverse items-center pl-8">
+            <span
+              ><p>info@dr-ziaei.com</p>
+              <p>ارتباط با ما</p></span
+            >
+            <svg
+              class="w-6 h-6 mx-4 lg:w-7 lg:h-7"
+              fill="#223a66"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              id="Layer_5"
+              x="0px"
+              y="0px"
+              viewBox="0 0 88 64"
+              xml:space="preserve"
+            >
+              <polygon
+                fill="none"
+                points="76.01,9.98 76.01,57.98 107.99,57.98 107.99,49.99 139.94,49.99 139.94,9.98 "
+              ></polygon>
+              <g>
+                <rect x="47.98" y="55.98" width="8.02" height="8"></rect>
+                <rect x="63.91" y="55.98" width="8.02" height="8"></rect>
+                <rect x="79.98" y="55.98" width="8.02" height="8"></rect>
+                <g>
+                  <path
+                    d="M8.01,55.98v-48h63.93v40.02h7.98V6c0-3.31-2.69-6-6-6H6C2.69,0,0,2.69,0,6v52c0,3.31,2.69,6,6,6h33.99    v-8.02H8.01z"
+                  ></path>
+                  <polygon
+                    points="7.99,12 40.07,32 71.95,12 71.95,19.95 39.97,39.19 7.99,19.95   "
+                  ></polygon>
+                </g>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
+
+      <!-- Menu and Search -->
       <div
-        class="w-full h-[4.38rem] bg-[#223a66] flex flex-row justify-between items-center"
+        class="w-full h-16 md:h-20 bg-[#223a66] flex flex-row-reverse justify-between items-center"
       >
-        <svg
-          class="text-white w-6 h-6 ml-1.5"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
-          />
-        </svg>
+        <div class="flex flex-row-reverse">
+          <svg
+            class="text-white w-6 h-6 ml-1.5 md:w-10 md:h-10"
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-6 h-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+            />
+          </svg>
+
+          <div class="hidden md:block ml-8">
+            <div
+              class="h-12 w-72 flex justify-center items-center bg-[#f13a66] text-xl font-bold text-white rounded-full hover:bg-white hover:text-[#f13a66] duration-500 overflow-hidden cursor-pointer"
+            >
+              <a href="#"> دریافت مشاوره رایگان </a>
+            </div>
+          </div>
+        </div>
 
         <svg
-          class="h-10 w-10 text-white border border-white mr-2"
+          class="h-10 w-10 md:w-14 md:h-14 text-white border border-white mr-2 lg:hidden"
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
           viewBox="0 0 24 24"
@@ -50,35 +169,46 @@
             d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
           />
         </svg>
+
+        <div class="hidden w-3/5 lg:flex justify-around text-white text-lg">
+          <a href="#" class="text-[#f13a66]">صفحه اصلی</a>
+          <a href="#">خدمات</a>
+          <a href="#">تماس با ما</a>
+          <a href="#">درباره ما</a>
+          <a href="#">درخواست وقت ملاقات</a>
+        </div>
       </div>
     </header>
-    <div>
-      <div
-        class="w-full h-[16.62rem] bg-slate-500 bg-[url('./images/dr.jpg')] bg-cover bg-no-repeat bg-top flex flex-col items-center justify-around rtl"
-      >
-        <span
-          class="rtl text-white font-bold text-[1rem] not-italic leading-[26px] mt-10 block w-full"
-          ><p class="animP inline text-center">کلینیک دندان پزشکی</p>
-          <p class="animP inline-block text-[1rem] text-center">
-            Dental Art Studio
-          </p></span
+
+    <!-- SlideShow -->
+    <section
+      class="w-full h-96 sm:h-[40rem] md:h-[47rem] bg-slate-500 bg-[url('./images/dr.jpg')] bg-cover bg-no-repeat bg-top flex flex-col items-center justify-around sm:justify-start md:items-start"
+    >
+      <div class="md:mr-20 md:mt-20 lg:mr-28 lg:mt-36">
+        <div
+          class="sm:text-3xl lg:text-5xl text-white font-black text-2xl not-italic mt-10 flex flex-col w-full justify-center items-center my-12 md:items-start"
         >
+          <p class="animP md:mb-10">کلینیک دندان پزشکی</p>
+          <p class="animP">Dental Art Studio</p>
+        </div>
+
         <p
-          class="animText font-normal rtl w-[9rem] text-[10px] text-center text-white revicons leading-[26px]"
+          class="animText font-normal w-36 text-xs text-center text-white revicons leading-7 mb-14 sm:text-sm sm:w-48 sm:leading-10 md:text-base lg:text-xl lg:w-60"
         >
           ارائه انواع خدمات دندان پزشکی با بالاترین کیفیت
         </p>
 
-        <div class="w-[8.31rem] h-[3.125rem]">
+        <div class="w-32 h-12 sm:w-48">
           <a
             href="#"
-            class="animButton bg-[#223a66] text-[0.9rem] font-bold text-white w-full h-full block text-center py-3 rounded-full hover:bg-transparent hover:text-[#223a66] hover:border-2 hover:border-[#223a66] overflow-hidden"
+            class="animButton bg-[#223a66] text-base md:text-lg font-bold text-white block text-center py-3 rounded-full hover:bg-transparent hover:text-[#223a66] hover:border-2 hover:border-[#223a66] overflow-hidden"
           >
             ارتباط با ما >
           </a>
         </div>
       </div>
-    </div>
+    </section>
+
     <div class="flex items-center justify-center flex-col mt-20 text-center">
       <p class="text-3xl font-medium not-italic text-[#223a66] text-center">
         خدمات درمانی ما
