@@ -1,7 +1,6 @@
-body{
-  font-family: 'Vazirmatn', sans-serif;
+body {
+  font-family: "Vazirmatn", sans-serif;
 }
-
 
 .animButton {
   visibility: hidden;
@@ -46,50 +45,21 @@ body{
     visibility: visible;
   }
 }
-.hoverBox2:hover {
-  transition: height 1s;
-}
-.hoverBox2:hover:first-child {
+
+.hoverBox:hover .hoverdiv {
+  transition: height 0.7s;
   height: 100%;
 }
 
-.hoverBox:hover {
-  animation: hoverBox 0.7s;
-  animation-fill-mode: both;
-}
-
-.hoverBox:hover span p {
-  color: white;
-}
-
+.hoverBox:hover .hoverpa ,
 .hoverBox:hover div svg {
+  color: white;
   fill: white;
 }
 
-.hoverBox:not(:hover) {
-  animation: notHoverBox 0.7s;
-}
-
-@keyframes hoverBox {
-  from {
-    height: 0;
-    background-color: #223a66;
-  }
-  to {
-    height: 100px;
-    background-color: #223a66;
-  }
-}
-
-@keyframes notHoverBox {
-  from {
-    height: 100px;
-    background-color: #223a66;
-  }
-  to {
-    height: 0;
-    background-color: #223a66;
-  }
+.hoverBox:not(:hover) .hoverdiv {
+  transition: height 0.7s;
+  height: 0;
 }
 
 .tr div {

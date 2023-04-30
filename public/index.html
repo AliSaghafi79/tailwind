@@ -182,7 +182,7 @@
 
     <!-- SlideShow -->
     <section
-      class="w-full h-96 sm:h-[40rem] md:h-[47rem] bg-slate-500 bg-[url('./images/dr.jpg')] bg-cover bg-no-repeat bg-top flex flex-col items-center justify-around sm:justify-start md:items-start"
+      class="w-full h-96 sm:h-[40rem] bg-slate-500 bg-[url('./images/dr.jpg')] bg-cover bg-no-repeat bg-top flex flex-col items-center justify-around sm:justify-start md:items-start"
     >
       <div class="md:mr-20 md:mt-20 lg:mr-28 lg:mt-36">
         <div
@@ -209,17 +209,25 @@
       </div>
     </section>
 
-    <div class="flex items-center justify-center flex-col mt-20 text-center">
-      <p class="text-3xl font-medium not-italic text-[#223a66] text-center">
+    <!-- Health Service -->
+    <section
+      class="flex items-center justify-center flex-col mt-20 text-center lg:bg-[url(https://dr-ziaei.com/wp-content/uploads/2019/09/home-3-posts-slider-bg.png)] bg-cover"
+    >
+      <p
+        class="text-3xl font-black not-italic text-[#223a66] text-center lg:text-5xl"
+      >
         خدمات درمانی ما
       </p>
-      <div class="mt-12 mr-3 ml-3 flex flex-col">
-        <div class="h-auto flex flex-col">
-          <img src="./images/service.jpg" alt="service.jpg" />
+
+      <div
+        class="mt-12 mx-3 lg:mx-32 flex flex-col lg:flex-row text-[#223a66] bg-white"
+      >
+        <div class="flex flex-col">
+          <img class="lg:h-3/4" src="./images/service.jpg" alt="service.jpg" />
           <div
-            class="h-auto flex flex-col items-center hoverBox2 cursor-pointer"
+            class="flex flex-col items-center cursor-pointer hoverBox relative lg:h-full"
           >
-            <div class="w-full h-0 bg-blue-950"></div>
+            <div class="w-full h-0 bg-[#223a66] hoverdiv absolute z-0"></div>
             <div>
               <svg
                 class="w-7 h-7 rotate-180"
@@ -238,16 +246,16 @@
               </svg>
             </div>
 
-            <span class="mt-5 mb-5">
+            <span class="mt-5 mb-5 z-10">
               <p
-                class="rtl text-3xl font-semibold Shabnam text-[#223a66] overflow-hidden"
+                class="hoverpa text-3xl font-black overflow-hidden lg:text-2xl"
               >
                 اندوکراون
               </p>
             </span>
-            <span class="text-center">
+            <span class="text-center z-10">
               <p
-                class="rtl text-[1rem] text-[#223a66] overflow-hidden pb-12 leading-7"
+                class="hoverpa text-base font-semibold overflow-hidden pb-12 leading-7 text-justify px-4"
               >
                 جدیدترین روش برای بازسازی دندان هایی که پوسیدگی وسیع دارند. در
                 این روش با استفاده از مواد سرامیکی قسمت های از دست رفته دندان با
@@ -257,14 +265,15 @@
             </span>
           </div>
         </div>
-        <div class="flex flex-col h-auto">
-          <img src="./images/22-2.jpg" alt="service.jpg" />
+        <div class="flex flex-col lg:flex-col-reverse">
+          <img class="lg:h-3/4" src="./images/22-2.jpg" alt="service.jpg" />
           <div
-            class="h-auto flex flex-col items-center hoverBox cursor-pointer"
+            class="flex flex-col lg:flex-col-reverse items-center hoverBox cursor-pointer relative lg:h-full"
           >
+            <div class="w-full h-0 bg-[#223a66] hoverdiv absolute z-0"></div>
             <div>
               <svg
-                class="w-7 h-7 rotate-180"
+                class="w-7 h-7 rotate-180 lg:rotate-0"
                 fill="#223a66"
                 version="1.1"
                 id="triangle-11"
@@ -280,34 +289,38 @@
               </svg>
             </div>
 
-            <span class="mt-5 mb-5">
-              <p
-                class="rtl text-3xl font-semibold Shabnam text-[#223a66] overflow-hidden"
-              >
-                ایمپلنت
-              </p>
-            </span>
-            <span class="text-center">
-              <p
-                class="rtl text-[1rem] text-[#223a66] overflow-hidden leading-7 pb-12"
-              >
-                درمان ایمپلنت بهترین جایگزین برای دندان های از دست رفته است. ما
-                در این مجموعه برند های برتر اروپایی را به شما اراِئه می کنیم.
-                شانس موفقیت بالاتر و طول عمر بیشتر ارمغان استفاده از برندهای
-                پیشرو برای شماست. در مجموعه ما با استفاده از روش های دیجیتال
-                نیاز به درمان های جراحی قدیمی به حداقل می رسد
-              </p>
-            </span>
+            <div class="z-10 mt-5">
+              <span>
+                <p
+                  class="pb-5 hoverpa text-3xl font-black overflow-hidden lg:text-2xl"
+                >
+                  ایمپلنت
+                </p>
+              </span>
+              <span class="text-center z-10">
+                <p
+                  class="hoverpa text-base font-semibold overflow-hidden leading-7 pb-12 text-justify px-4"
+                >
+                  درمان ایمپلنت بهترین جایگزین برای دندان های از دست رفته است.
+                  ما در این مجموعه برند های برتر اروپایی را به شما اراِئه می
+                  کنیم. شانس موفقیت بالاتر و طول عمر بیشتر ارمغان استفاده از
+                  برندهای پیشرو برای شماست. در مجموعه ما با استفاده از روش های
+                  دیجیتال نیاز به درمان های جراحی قدیمی به حداقل می رسد
+                </p>
+              </span>
+            </div>
           </div>
         </div>
-        <div class="flex flex-col h-auto">
+        <div class="flex flex-col">
           <img
+            class="lg:h-3/4"
             src="./images/home-3-gallery-5-1-768x509-min.jpg"
             alt="service.jpg"
           />
           <div
-            class="h-auto flex flex-col items-center hoverBox cursor-pointer"
+            class="flex flex-col items-center hoverBox cursor-pointer relative lg:h-full"
           >
+            <div class="w-full h-0 bg-[#223a66] hoverdiv absolute z-0"></div>
             <div>
               <svg
                 class="w-7 h-7 rotate-180"
@@ -326,16 +339,16 @@
               </svg>
             </div>
 
-            <span class="mt-5 mb-5">
+            <span class="mt-5 mb-5 z-10">
               <p
-                class="rtl text-3xl font-semibold Shabnam text-[#223a66] overflow-hidden"
+                class="hoverpa text-3xl font-black overflow-hidden lg:text-2xl"
               >
                 درمان ریشه و ترمیم
               </p>
             </span>
-            <span class="text-center">
+            <span class="text-center z-10">
               <p
-                class="rtl text-[1rem] text-[#223a66] overflow-hidden leading-7 pb-12"
+                class="hoverpa text-base font-semibold overflow-hidden leading-7 pb-12 text-justify px-4"
               >
                 استفاده از تجهیزات بروز، تجربه درمانی کاملا دقیق و بدون ناراحتی
                 را برای شما رقم خواهد زد. برطرف کردن پوسیدگی های دندان های شما و
@@ -347,7 +360,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
     <div class="mt-[5.625rem]">
       <div
