@@ -16,6 +16,17 @@
     <title>کلینیک دندان پزشکی دکتر ضیائی</title>
     <!-- CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            screens: {
+              res: { max: "300px" },
+            },
+          },
+        },
+      };
+    </script>
   </head>
   <body>
     <!-- Header -->
@@ -362,16 +373,21 @@
       </div>
     </section>
 
-    <div class="mt-[5.625rem]">
+    <!-- Smile -->
+    <section class="mt-24">
       <div
-        class="w-full h-40 bg-[url('./images/home-3-video-bg-2-1-min.jpg')] bg-cover bg-top flex items-center justify-center text-center"
+        class="w-full h-40 md:h-[31rem] bg-[url('./images/home-3-video-bg-2-1-min.jpg')] bg-cover bg-top flex items-center justify-center text-center"
       >
-        <span class="relative">
-          <p class="text-[1.6rem] font-semibold text-white Vazir">
+        <span
+          class="flex flex-row flex-wrap res:flex-col res:items-center res:gap-4"
+        >
+          <p
+            class="text-2xl font-semibold text-white ml-3 md:text-4xl md:font-black lg:text-5xl"
+          >
             با ما با اطمینان لبخند بزنید
           </p>
           <svg
-            class="w-6 h-6 absolute top-12 left-16"
+            class="w-6 h-6 md:w-8 md:h-8 lg:w-12 lg:h-12"
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 36 36"
           >
@@ -385,7 +401,7 @@
           </svg>
         </span>
       </div>
-    </div>
+    </section>
 
     <div class="mt-24 w-full h-auto">
       <div
