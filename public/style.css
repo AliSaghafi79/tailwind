@@ -109,3 +109,8 @@ body {
   color: #f13a66;
   fill: #f13a66;
 }
+
+.next:hover .nextdiv {
+  display: block;
+  transition: all 1s;
+}
