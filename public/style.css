@@ -92,3 +92,20 @@ body {
 .btn:hover p {
   color: #f13a66;
 }
+
+.hoverNews:hover .NewsP {
+  color: #f13a66;
+  transition: all 0.5s;
+}
+
+.hoverNews:hover .image {
+  transition: all 0.5s;
+  opacity: 0.7;
+}
+
+.pink:hover p,
+.pink:hover svg path {
+  transition: all 0.8s;
+  color: #f13a66;
+  fill: #f13a66;
+}
