@@ -112,5 +112,12 @@ body {
 
 .next:hover .nextdiv {
   display: block;
+  transition: all 0.3s;
+}
+
+.login:hover {
   transition: all 1s;
+}
+.login:hover svg path {
+  stroke: white;
 }
