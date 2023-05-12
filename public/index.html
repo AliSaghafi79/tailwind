@@ -30,16 +30,18 @@
   </head>
   <body>
     <!-- Header -->
-    <header class="w-full h-auto flex flex-col">
+    <header class="w-full h-auto flex flex-col xl:items-center">
       <div
-        class="w-full h-32 md:h-40 flex justify-center items-center md:flex-row md:justify-between text-[#223a66] font-semibold lg:justify-around"
+        class="w-full h-32 md:h-40 flex justify-center items-center md:flex-row md:justify-between text-[#223a66] font-semibold lg:justify-around xl:w-[1000px] xl:justify-normal xl:gap-8"
       >
         <img
           class="w-60 md:w-52 lg:w-80 lg:h-20 h-12"
           src="./images/logo-ziaei3.png"
           alt="logo-ziaei"
         />
-        <div class="hidden md:flex flex-row justify-between w-3/4 lg:w-2/4">
+        <div
+          class="hidden md:flex flex-row justify-between w-3/4 lg:w-2/4 xl:w-3/4"
+        >
           <div class="flex flex-row-reverse items-center">
             <span
               ><p>شنبه تا پنج‌شنبه (10-8)</p>
@@ -136,12 +138,38 @@
       </div>
 
       <!-- Menu and Search -->
-      <div
-        class="w-full h-16 md:h-20 bg-[#223a66] flex flex-row-reverse justify-between items-center"
-      >
-        <div class="flex flex-row-reverse">
+      <div class="w-full h-16 md:h-20 bg-[#223a66] flex justify-center">
+        <div
+          class="flex flex-row-reverse justify-between items-center w-full xl:w-[1000px]"
+        >
+          <div class="flex flex-row-reverse gap-4">
+            <svg
+              class="text-white w-6 h-6 ml-1.5"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              class="w-6 h-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              />
+            </svg>
+
+            <div class="hidden md:block">
+              <div
+                class="md:w-48 md:text-base md:h-10 flex justify-center items-center bg-[#f13a66] text-xl font-bold text-white rounded-full hover:bg-white hover:text-[#f13a66] duration-500 overflow-hidden cursor-pointer"
+              >
+                <a href="#"> دریافت مشاوره رایگان </a>
+              </div>
+            </div>
+          </div>
+
           <svg
-            class="text-white w-6 h-6 ml-1.5 md:w-10 md:h-10"
+            class="h-10 w-10 text-white border border-white mr-2 lg:hidden"
             xmlns="http://www.w3.org/2000/svg"
             fill="none"
             viewBox="0 0 24 24"
@@ -152,41 +180,19 @@
             <path
               stroke-linecap="round"
               stroke-linejoin="round"
-              d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
             />
           </svg>
 
-          <div class="hidden md:block ml-8">
-            <div
-              class="h-12 w-72 flex justify-center items-center bg-[#f13a66] text-xl font-bold text-white rounded-full hover:bg-white hover:text-[#f13a66] duration-500 overflow-hidden cursor-pointer"
-            >
-              <a href="#"> دریافت مشاوره رایگان </a>
-            </div>
+          <div
+            class="hidden w-3/5 xl:justify-normal xl:gap-6 lg:flex justify-around text-white text-base font-extrabold"
+          >
+            <a href="#" class="text-[#f13a66]">صفحه اصلی</a>
+            <a href="#">خدمات</a>
+            <a href="#">تماس با ما</a>
+            <a href="#">درباره ما</a>
+            <a href="#">درخواست وقت ملاقات</a>
           </div>
-        </div>
-
-        <svg
-          class="h-10 w-10 md:w-14 md:h-14 text-white border border-white mr-2 lg:hidden"
-          xmlns="http://www.w3.org/2000/svg"
-          fill="none"
-          viewBox="0 0 24 24"
-          stroke-width="1.5"
-          stroke="currentColor"
-          class="w-6 h-6"
-        >
-          <path
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-          />
-        </svg>
-
-        <div class="hidden w-3/5 lg:flex justify-around text-white text-lg">
-          <a href="#" class="text-[#f13a66]">صفحه اصلی</a>
-          <a href="#">خدمات</a>
-          <a href="#">تماس با ما</a>
-          <a href="#">درباره ما</a>
-          <a href="#">درخواست وقت ملاقات</a>
         </div>
       </div>
     </header>
@@ -231,10 +237,10 @@
       </p>
 
       <div
-        class="mt-12 mx-3 lg:mx-32 flex flex-col lg:flex-row text-[#223a66] bg-white"
+        class="mt-12 mx-3 lg:mx-4 flex flex-col lg:flex-row text-[#223a66] bg-white xl:max-w-[1000px]"
       >
-        <div class="flex flex-col">
-          <img class="lg:h-3/4" src="./images/service.jpg" alt="service.jpg" />
+        <div class="flex flex-col basis-1/3">
+          <img src="./images/service.jpg" alt="service.jpg" />
           <div
             class="flex flex-col items-center cursor-pointer hoverBox relative lg:h-full"
           >
@@ -276,8 +282,8 @@
             </span>
           </div>
         </div>
-        <div class="flex flex-col lg:flex-col-reverse">
-          <img class="lg:h-3/4" src="./images/22-2.jpg" alt="service.jpg" />
+        <div class="flex flex-col lg:flex-col-reverse basis-1/3">
+          <img src="./images/22-2.jpg" alt="service.jpg" />
           <div
             class="flex flex-col lg:flex-col-reverse items-center hoverBox cursor-pointer relative lg:h-full"
           >
@@ -322,9 +328,8 @@
             </div>
           </div>
         </div>
-        <div class="flex flex-col">
+        <div class="flex flex-col basis-1/3">
           <img
-            class="lg:h-3/4"
             src="./images/home-3-gallery-5-1-768x509-min.jpg"
             alt="service.jpg"
           />
@@ -409,7 +414,9 @@
         class="mx-3 h-full bg-white flex flex-col justify-between items-center text-center"
       >
         <span>
-          <p class="text-[#223a66] text-3xl leading-7 font-black md:text-4xl">
+          <p
+            class="text-[#223a66] text-3xl leading-loose font-black md:text-4xl xl:text-5xl"
+          >
             کلینیک دندانپزشکی Dental Art Studio
           </p>
         </span>
@@ -425,257 +432,263 @@
     </section>
 
     <!-- composite -->
-    <section class="mt-12 flex flex-col md:grid md:grid-cols-3 gap-8">
-      <!-- C1 -->
+    <section class="flex justify-center">
       <div
-        class="mx-3 md:h-80 md:w-60 lg:w-80 xl:w-96 h-72 bg-[url('./images/11-1-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
+        class="mt-12 w-full xl:max-w-[1000px] flex flex-col md:grid md:grid-cols-3 gap-4"
       >
+        <!-- C1 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 md:h-80 md:w-64 lg:w-80 xl:h-72 h-72 bg-[url('./images/11-1-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C2 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/10-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C2 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 xl:h-72 lg:w-80 xl:w-80 bg-[url('./images/10-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C3 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/صثصث-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C3 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 xl:h-72 lg:w-80 xl:w-80 bg-[url('./images/صثصث-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C4 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/6-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C4 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 xl:h-72 lg:w-80 xl:w-80 bg-[url('./images/6-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C5 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/5-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C5 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 xl:h-72 lg:w-80 xl:w-80 bg-[url('./images/5-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C6 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/4-1-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C6 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 lg:w-80 xl:h-72 xl:w-80 bg-[url('./images/4-1-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C7 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/9-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C7 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 lg:w-80 xl:h-72 xl:w-80 bg-[url('./images/9-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C8 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/8-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C8 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 lg:w-80 xl:h-72 xl:w-80 bg-[url('./images/8-min.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
-      </div>
 
-      <!-- C9 -->
-      <div
-        class="mx-3 h-72 md:h-80 md:w-60 lg:w-80 xl:w-96 bg-[url('./images/7-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
-      >
+        <!-- C9 -->
         <div
-          class="w-0 h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
+          class="mx-3 h-72 md:h-80 md:w-64 lg:w-80 xl:h-72 xl:w-80 bg-[url('./images/7-min-1.jpg')] bg-cover bg-[center_center] rounded-3xl cursor-pointer tr relative"
         >
-          <svg
-            class="mr-6"
-            fill="white"
-            width="65px"
-            height="65px"
-            viewBox="0 0 14 14"
-            role="img"
-            focusable="false"
-            aria-hidden="true"
-            xmlns="http://www.w3.org/2000/svg"
+          <div
+            class="w-0 h-72 xl:h-72 md:h-80 bg-[rgba(241,58,102,0.8)] absolute left-0 rounded-3xl opacity-90 flex flex-col justify-center"
           >
-            <path
-              d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
-            />
-          </svg>
-          <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+            <svg
+              class="mr-6"
+              fill="white"
+              width="65px"
+              height="65px"
+              viewBox="0 0 14 14"
+              role="img"
+              focusable="false"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M 4.3,7 C 5.1270625,7 5.8,6.32706 5.8,5.5 5.8,4.67294 5.1270625,4 4.3,4 3.4729375,4 2.8,4.67294 2.8,5.5 2.8,6.32706 3.4729375,7 4.3,7 Z m 6.6,-2.4 -4.2,0 C 6.53425,4.6 6.4,4.73425 6.4,4.9 l 0,2.7 -4.2,0 0,-3.9 C 2.2,3.53425 2.06575,3.4 1.9,3.4 l -0.6,0 C 1.13425,3.4 1,3.53425 1,3.7 l 0,6.6 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 l 0,-0.9 9.6,0 0,0.9 c 0,0.16575 0.13425,0.3 0.3,0.3 l 0.6,0 c 0.16575,0 0.3,-0.13425 0.3,-0.3 L 13,6.7 C 13,5.54013 12.059875,4.6 10.9,4.6 Z"
+              />
+            </svg>
+            <p class="text-2xl text-white font-black mr-6 mt-5">کامپوزیت</p>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- Beauty services -->
     <section
-      class="bg-[url(https://dr-ziaei.com/wp-content/uploads/2019/09/home-3-infographic-bg.jpg)] w-full mt-24 bg-[top_center]"
+      class="bg-[url(https://dr-ziaei.com/wp-content/uploads/2019/09/home-3-infographic-bg.jpg)] w-full mt-24 bg-[top_center] xl:flex xl:flex-col xl:justify-center xl:items-center"
     >
       <div class="pt-24 pb-9 flex flex-col items-center">
-        <p class="text-2xl lg:text-5xl leading-9 font-black text-[#223a66]">
+        <p
+          class="text-2xl md:text-3xl lg:text-5xl leading-9 font-black text-[#223a66]"
+        >
           خدمات زیبایی ما
         </p>
         <div class="w-16 h-[2px] bg-[#f06699] mt-5"></div>
       </div>
 
-      <div class="lg:flex lg:flex-row">
+      <div class="lg:flex lg:flex-row xl:max-w-[1000px]">
         <div class="p-3 mb-12 lg:flex lg:flex-row">
           <div
-            class="hidden lg:block border-y-2 border-r-2 w-44 h-72 border-[#f06699]"
+            class="hidden lg:block border-y-2 border-r-2 lg:w-72 xl:w-80 h-72 border-[#f06699]"
           >
             <span class="hidden relative lg:flex lg:flex-row h-3 w-full">
               <span
@@ -716,7 +729,7 @@
             </p>
           </span>
           <div
-            class="hidden lg:block border-y-2 border-l-2 w-44 h-72 border-[#f06699]"
+            class="hidden lg:block border-y-2 border-l-2 lg:w-72 xl:w-80 h-72 border-[#f06699]"
           >
             <span class="hidden relative lg:flex h-3 w-3">
               <span
@@ -732,70 +745,74 @@
     </section>
 
     <!-- Tooth -->
-    <section class="relative top-[-200px]">
-      <div class="py-3 flex justify-center">
-        <img class="align-super" src="./images/molar-tooth.png" alt="tooth" />
-      </div>
-
-      <div
-        class="hidden lg:flex flex-row justify-between relative top-[-250px]"
-      >
-        <div
-          class="flex items-end border-y-2 border-r-2 w-20 mr-3 xl:mr-14 2xl:mr-24 h-96 border-[#f06699]"
-        >
-          <span class="hidden relative lg:flex h-3 w-full">
-            <span
-              class="animate-ping absolute bottom-[-7px] left-0 inline-flex h-full w-3 rounded-full bg-[#f06699] opacity-75"
-            ></span>
-            <span
-              class="absolute inline-flex bottom-[-7px] left-0 rounded-full h-3 w-3 bg-[#f06699]"
-            ></span>
-          </span>
+    <section class="relative top-[-200px] lg:top-[-150px] max-h-[43rem]">
+      <div class="lg:w-full lg:max-h-[37rem]">
+        <div class="py-3 flex justify-center">
+          <img class="align-super" src="./images/molar-tooth.png" alt="tooth" />
         </div>
 
-        <div
-          class="flex items-end border-y-2 border-l-2 ml-3 xl:ml-14 2xl:mr-24 w-20 h-96 border-[#f06699]"
-        >
-          <span class="hidden relative lg:flex h-3 w-3 lg:w-full">
-            <span
-              class="animate-ping absolute bottom-[-7px] inline-flex h-full w-full lg:w-3 rounded-full bg-[#f06699] opacity-75"
-            ></span>
-            <span
-              class="relative inline-flex bottom-[-7px] rounded-full h-3 w-3 bg-[#f06699]"
-            ></span>
-          </span>
-        </div>
-      </div>
-
-      <div
-        class="lg:flex lg:items-center lg:justify-around lg:relative lg:top-[-270px]"
-      >
-        <div class="lg:flex lg:flex-row lg:w-3/4">
-          <div class="p-3 pt-8 lg:pt-0">
-            <p class="text-[#223a66] text-2xl font-black mb-5 xl:text-3xl">
-              کامپوزیت ونیر
-            </p>
-            <p
-              class="text-[#223a66] text-base text-justify font-semibold tracking-[-0.7px] leading-7 xl:text-lg"
+        <div class="w-full xl:flex xl:justify-center relative top-[-250px]">
+          <div class="hidden lg:flex flex-row justify-between xl:w-[1000px]">
+            <div
+              class="flex items-end border-y-2 border-r-2 w-20 mr-3 xl:mr-0 h-96 border-[#f06699]"
             >
-              کامپوزیت ونیر یک روش سریع و مقرون به صرفه برای خلق لبخندی زیباست.
-              در مجموعه ما کیفیت بالای کامپوزیت های آمریکایی و آلمانی در کنار
-              هنر دست ایرانی جلوه بی نظیری به لبخند شما می دهد.
-            </p>
+              <span class="hidden relative lg:flex h-3 w-full">
+                <span
+                  class="animate-ping absolute bottom-[-7px] left-0 inline-flex h-full w-3 rounded-full bg-[#f06699] opacity-75"
+                ></span>
+                <span
+                  class="absolute inline-flex bottom-[-7px] left-0 rounded-full h-3 w-3 bg-[#f06699]"
+                ></span>
+              </span>
+            </div>
+
+            <div
+              class="flex items-end border-y-2 border-l-2 ml-3 xl:ml-0 w-20 h-96 border-[#f06699]"
+            >
+              <span class="hidden relative lg:flex h-3 w-3 lg:w-full">
+                <span
+                  class="animate-ping absolute bottom-[-7px] inline-flex h-full w-full lg:w-3 rounded-full bg-[#f06699] opacity-75"
+                ></span>
+                <span
+                  class="relative inline-flex bottom-[-7px] rounded-full h-3 w-3 bg-[#f06699]"
+                ></span>
+              </span>
+            </div>
           </div>
+        </div>
+      </div>
 
-          <div class="p-3 pt-14 lg:pt-0">
-            <p class="text-[#223a66] text-2xl font-black mb-5 xl:text-3xl">
-              بلیچینگ
-            </p>
-            <p
-              class="text-[#223a66] text-base text-justify font-semibold tracking-[-0.7px] leading-7 xl:text-lg"
-            >
-              اگر به دنبال مطمئن ترین راه برای سفید کردن دندان های خود هستید
-              پیشنهاد ما به شما بلیچینگ است. در این روش بدون نیاز به تراش دندان
-              ها، با استفاده از موادی کاملا بی ضرر می توانید دندان های خود را
-              روشن تر از همیشه کنید.
-            </p>
+      <div class="lg:flex justify-center">
+        <div
+          class="lg:flex lg:items-center lg:justify-around lg:relative lg:max-w-[1000px]"
+        >
+          <div class="lg:flex lg:flex-row lg:w-3/4">
+            <div class="p-3 pt-8 lg:pt-0">
+              <p class="text-[#223a66] text-2xl font-black mb-5 xl:text-3xl">
+                کامپوزیت ونیر
+              </p>
+              <p
+                class="text-[#223a66] text-base text-justify font-semibold tracking-[-0.7px] leading-7 xl:text-lg"
+              >
+                کامپوزیت ونیر یک روش سریع و مقرون به صرفه برای خلق لبخندی
+                زیباست. در مجموعه ما کیفیت بالای کامپوزیت های آمریکایی و آلمانی
+                در کنار هنر دست ایرانی جلوه بی نظیری به لبخند شما می دهد.
+              </p>
+            </div>
+
+            <div class="p-3 pt-14 lg:pt-0">
+              <p class="text-[#223a66] text-2xl font-black mb-5 xl:text-3xl">
+                بلیچینگ
+              </p>
+              <p
+                class="text-[#223a66] text-base text-justify font-semibold tracking-[-0.7px] leading-7 xl:text-lg"
+              >
+                اگر به دنبال مطمئن ترین راه برای سفید کردن دندان های خود هستید
+                پیشنهاد ما به شما بلیچینگ است. در این روش بدون نیاز به تراش
+                دندان ها، با استفاده از موادی کاملا بی ضرر می توانید دندان های
+                خود را روشن تر از همیشه کنید.
+              </p>
+            </div>
           </div>
         </div>
       </div>
@@ -807,7 +824,7 @@
     >
       <div class="px-8">
         <p
-          class="text-3xl leading-9 font-black text-[#223a66] text-center md:text-4xl"
+          class="text-3xl leading-9 font-black text-[#223a66] text-center md:text-4xl lg:text-5xl"
         >
           هدف نهایی ما، لبخندی زیبا بر روی لب های شماست
         </p>
@@ -860,9 +877,9 @@
         </div>
       </div>
 
-      <div class="mt-8 w-full">
+      <div class="mt-8 w-full flex items-center justify-center">
         <a
-          class="bg-[#f13a66] max-w-[20rem] h-14 rounded-full flex flex-row-reverse items-center justify-center text-center btn mx-[25%] lg:mx-[30%]"
+          class="bg-[#f13a66] w-72 res:w-56 h-14 rounded-full flex flex-row items-center justify-center text-center btn px-24 py-8 gap-6"
           href="#"
         >
           <span>
@@ -880,7 +897,7 @@
               />
             </svg>
           </span>
-          <p class="text-white text-lg w-36 font-semibold">
+          <p class="text-white text-lg font-semibold left-10 md:ml-10">
             تماس با ما 09940474020
           </p>
         </a>
@@ -905,7 +922,7 @@
 
     <!-- List -->
     <section class="w-full bg-slate-100">
-      <span class="flex flex-col items-center text-[#223a66]">
+      <span class="flex flex-col items-center text-center text-[#223a66]">
         <p class="text-3xl font-black pt-28 lg:text-6xl">
           لیست متخصصین کلینیک ما
         </p>
@@ -914,39 +931,48 @@
           تجربه می باشد
         </p>
       </span>
-      <div class="mt-20 flex flex-col mx-5 md:flex-row md:justify-around pb-24">
-        <div class="bg-white p-10 shadow-2xl md:pb-3 md:px-16">
-          <div class="flex flex-col items-center text-[#223a66]">
-            <div class="flex justify-center mb-14 md:mb-5">
-              <img
-                class="rounded-full sm:w-96 sm:h-96 md:w-64 md:h-64 lg:w-[28rem] lg:h-[28rem]"
-                src="./images/team-2-2.jpg"
-                alt=""
-              />
+
+      <div class="w-full xl:flex xl:items-center xl:justify-center">
+        <div
+          class="mt-20 flex flex-col mx-5 md:flex-row md:justify-around xl:justify-center lg:gap-5 xl:w-[1200px] pb-24"
+        >
+          <div
+            class="bg-white p-10 shadow-2xl md:pb-3 md:px-16 h-auto lg:w-1/2 xl:w-2/5"
+          >
+            <div class="flex flex-col items-center text-[#223a66]">
+              <div class="flex justify-center mb-14 md:mb-5">
+                <img
+                  class="rounded-full sm:w-96 sm:h-96 md:w-64 md:h-64 lg:w-72 lg:h-72"
+                  src="./images/team-2-2.jpg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-2xl font-bold mb-4 sm:text-3xl sm:font-black md:text-2xl lg:text-3xl"
+              >
+                دکتر نازنین سماعی
+              </p>
+              <p class="text-base font-semibold lg:text-lg">دندان پزشک</p>
             </div>
-            <p
-              class="text-2xl font-bold mb-4 sm:text-3xl sm:font-black md:text-2xl lg:text-3xl"
-            >
-              دکتر نازنین سماعی
-            </p>
-            <p class="text-base font-semibold lg:text-lg">دندان پزشک</p>
           </div>
-        </div>
-        <div class="bg-white mt-5 p-10 shadow-2xl md:pb-3 md:px-16 md:mt-0">
-          <div class="flex flex-col items-center text-[#223a66]">
-            <div class="flex justify-center mb-14 md:mb-5">
-              <img
-                class="rounded-full sm:w-96 sm:h-96 md:w-64 md:h-64 lg:w-[28rem] lg:h-[28rem]"
-                src="./images/team-1-1.jpg"
-                alt=""
-              />
+          <div
+            class="bg-white mt-5 p-10 shadow-2xl md:pb-3 md:px-16 md:mt-0 lg:w-1/2 xl:w-2/5"
+          >
+            <div class="flex flex-col items-center text-[#223a66]">
+              <div class="flex justify-center mb-14 md:mb-5">
+                <img
+                  class="rounded-full sm:w-96 sm:h-96 md:w-64 md:h-64 lg:w-72 lg:h-72"
+                  src="./images/team-1-1.jpg"
+                  alt=""
+                />
+              </div>
+              <p
+                class="text-2xl font-bold mb-4 sm:text-3xl sm:font-black md:text-2xl lg:text-3xl"
+              >
+                دکتر پوریا ضیائی
+              </p>
+              <p class="text-base font-semibold lg:text-lg">دندان پزشک</p>
             </div>
-            <p
-              class="text-2xl font-bold mb-4 sm:text-3xl sm:font-black md:text-2xl lg:text-3xl"
-            >
-              دکتر پوریا ضیائی
-            </p>
-            <p class="text-base font-semibold lg:text-lg">دندان پزشک</p>
           </div>
         </div>
       </div>
@@ -954,7 +980,7 @@
 
     <!-- News -->
     <section
-      class="bg-[#f7f9fb] w-full pt-24 md:bg-[url(https://dr-ziaei.com/wp-content/uploads/2019/09/home-3-posts-slider-bg.png)] bg-cover bg-no-repeat"
+      class="bg-[#f7f9fb] w-full pt-24 md:bg-[url(https://dr-ziaei.com/wp-content/uploads/2019/09/home-3-posts-slider-bg.png)] bg-cover bg-no-repeat xl:flex xl:flex-col xl:items-center"
     >
       <div class="text-[#223a66] flex flex-col items-center px-4">
         <p class="text-2xl md:text-4xl lg:text-5xl font-black mb-3">
@@ -966,7 +992,7 @@
       </div>
 
       <div
-        class="mt-10 flex flex-col items-center mx-4 gap-16 pb-24 md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-5"
+        class="mt-10 flex flex-col items-center mx-4 gap-16 pb-24 md:grid md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-5 xl:w-[1000px]"
       >
         <!-- Box1 -->
         <div class="bg-white hoverNews w-full">
@@ -1181,7 +1207,9 @@
       >
         قبل و بعد از خدمات زیبایی دندان
       </p>
-      <div class="px-4 mt-12 flex flex-col gap-8 md:flex-row md:gap-4">
+      <div
+        class="px-4 mt-12 flex flex-col gap-8 md:flex-row md:gap-4 xl:w-[1000px]"
+      >
         <div
           class="flex justify-center items-center w-full relative rounded-3xl next"
         >
@@ -1498,7 +1526,7 @@
     </section>
     <!-- Footer -->
     <footer class="bg-slate-200 bg-no-repeat">
-      <div class="lg:flex lg:flex-row">
+      <div class="lg:flex lg:flex-row xl:justify-center">
         <div class="pt-16 pr-8">
           <img class="w-80" src="./images/logo-ziaei3.png" alt="logo-ziaei" />
           <p class="mt-8 text-base font-semibold">
@@ -1566,8 +1594,8 @@
         </div>
 
         <div class="md:flex md:flex-row">
-          <div class="mt-16 pr-8">
-            <p class="text-2xl font-bold">خدمات کلینیک</p>
+          <div class="mt-16 pr-8 w-2/3">
+            <p class="text-2xl font-bold w-36">خدمات کلینیک</p>
             <div class="mt-6 text-base font-semibold">
               <p
                 class="mb-2 hover:text-[#1cba9f] hover:transition-all hover:duration-500 cursor-pointer"
@@ -1613,7 +1641,9 @@
           </div>
 
           <!-- works day -->
-          <div class="mt-20 pr-8 ml-2 md:mr-48 lg:mr-12 xl:mr-52">
+          <div
+            class="mt-20 pr-8 ml-2 md:mr-48 lg:mr-12 xl:mr-52 md:w-full md:flex md:flex-col md:justify-between"
+          >
             <p class="text-2xl font-bold">روزهای کاری</p>
             <div
               class="flex flex-row justify-between font-semibold text-base mt-8 bg-gray-300 px-3"
